@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>YSM酸涩</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="YSM酸涩">
+<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:site_name" content="YSM酸涩">
+<meta property="og:locale" content="zh-CN">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="YSM酸涩">
+  
+    <link rel="alternate" href="/atom.xml" title="YSM酸涩" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">YSM酸涩</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">梦想不会因时间的流逝而失去原来的光芒</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-笔记" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/01/15/笔记/" class="article-date">
+  <time datetime="2018-01-15T08:21:52.743Z" itemprop="datePublished">2018-01-15</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h1><h2 id="项目描述"><a href="#项目描述" class="headerlink" title="项目描述"></a>项目描述</h2><p>乐淘商城是一个针对鞋类商品的在线交易平台，合适就穿，不合适就换。乐淘为您支付退换货的物流费用，以最快速度把换好的鞋子送到您手中，最好的品牌，最低的价格。乐淘族凭借雄厚的资金实力和在电子商务业界的诚信积累，与Nike、Adidas、Converse、NewBalance等国际大牌深度合作。保证了产品与专卖店同步更新，让您不出家门能最快速度买到当季新款名牌鞋。乐淘族坚持自营，减少中间环节，让利给用户，因此所有产品价格均低于传统销售渠道。</p>
+<h2 id="项目架构"><a href="#项目架构" class="headerlink" title="项目架构"></a>项目架构</h2><p><img src="images/项目架构.png" alt=""></p>
+<h1 id="环境搭建"><a href="#环境搭建" class="headerlink" title="环境搭建"></a>环境搭建</h1><h2 id="安装node"><a href="#安装node" class="headerlink" title="安装node"></a>安装node</h2><p>在前后端分离开发时，首先需要配好 本地化开发环境，也就是说需要在本地搭建后台开发环境。由于我们的后台 使用的是<code>nodejs</code>，因此需要先搭建<code>nodejs</code>环境</p>
+<ol>
+<li>下载node安装包（已经提供）</li>
+<li>双击安装（推荐安装在C盘，方便查找）</li>
+<li>在cmd命令行中输入<code>node -v</code>以及<code>npm -v</code>查看是否安装成功</li>
+</ol>
+<h2 id="获取项目代码"><a href="#获取项目代码" class="headerlink" title="获取项目代码"></a>获取项目代码</h2><ol>
+<li>已经提供letao.zip文件夹</li>
+<li>下载代码解压到D盘根目录：</li>
+</ol>
+<h2 id="数据库初始化"><a href="#数据库初始化" class="headerlink" title="数据库初始化"></a>数据库初始化</h2><ol>
+<li>启动mysql服务，如果是wamp或者phpstudy，可以一键启动。</li>
+<li>导入数据。推荐使用数据库可视化软件（navicat for Mysql 或者sqlyog）</li>
+</ol>
+<h2 id="修改数据库配置"><a href="#修改数据库配置" class="headerlink" title="修改数据库配置"></a>修改数据库配置</h2><p>修改modules文件夹中<code>db.js</code>文件</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> pool  = mysql.createPool(&#123;</span><br><span class="line">    host : <span class="string">'127.0.0.1'</span>,<span class="comment">//主机地址，不用改</span></span><br><span class="line">    user : <span class="string">'root'</span>,<span class="comment">//用户名，不用改</span></span><br><span class="line">    password : <span class="string">'root'</span>,<span class="comment">//密码,填写自己数据库的密码，如果是phpstudy，默认密码是root，如果是wamp，默认密码是空</span></span><br><span class="line">    database : <span class="string">'letao'</span><span class="comment">//数据库名，不用改</span></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<h2 id="启动项目"><a href="#启动项目" class="headerlink" title="启动项目"></a>启动项目</h2><ol>
+<li>使用<code>npm start</code>启动项目，启动后窗口不能关闭。</li>
+</ol>
+<p>移动端商城页面访问：<a href="http://localhost:3000/mobile" target="_blank" rel="noopener">http://localhost:3000/mobile</a></p>
+<p>后端管理页面访问：<a href="http://localhost:3000/manage" target="_blank" rel="noopener">http://localhost:3000/manage</a></p>
+<p>唯一管理员账号：root   唯一管理员密码：123456</p>
+<p><code>注意：项目启动后窗口不能关闭，如果项目报错了，需要重启服务</code></p>
+<h2 id="使用git管理项目"><a href="#使用git管理项目" class="headerlink" title="使用git管理项目"></a>使用git管理项目</h2><ol>
+<li><code>git init</code>初始化项目</li>
+<li><code>git add .</code>添加代码</li>
+<li><code>git commit -m &#39;项目初始化&#39;</code>提交代码</li>
+<li>在github创建一个仓库，用于存放项目代码</li>
+<li>设置仓库别名：<code>git remote add origin git@github.com:hucongcong/letao.git</code></li>
+<li>将代码推送到github上：<code>git push origin master</code></li>
+</ol>
+<h1 id="pc端管理系统"><a href="#pc端管理系统" class="headerlink" title="pc端管理系统"></a>pc端管理系统</h1><p>我们后端管理系统所有的代码都写到<code>back</code>文件夹下面</p>
+<ul>
+<li>搭建了后台管理系统的架子（css image js）</li>
+</ul>
+<h2 id="登录功能"><a href="#登录功能" class="headerlink" title="登录功能"></a>登录功能</h2><p>开启分支：<code>git branch login</code></p>
+<p>切换分支：<code>git checkout login</code></p>
+<p>在login在开发登录登录功能，等功能开发完成后将代码合并到master分支。</p>
+<h3 id="静态页面"><a href="#静态页面" class="headerlink" title="静态页面"></a>静态页面</h3><ol>
+<li>设置登录页面的背景颜色为<code>#222d32</code></li>
+<li>使用面板组件</li>
+<li>使用按钮组件</li>
+</ol>
+<p>使用bootstrap的各种组件</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">栅格系统</span><br><span class="line">面板组件（带标题）</span><br><span class="line">表单组件</span><br><span class="line">按钮组件</span><br></pre></td></tr></table></figure>
+<p>提交代码到login分支</p>
+<h3 id="使用bootstrap-validator插件"><a href="#使用bootstrap-validator插件" class="headerlink" title="使用bootstrap-validator插件"></a>使用bootstrap-validator插件</h3><p>校验规则：</p>
+<ol>
+<li>用户名不能为空</li>
+<li>用户密码不能为空</li>
+<li>用户密码长度为6-12位</li>
+</ol>
+<p>参照文档：《bootstrap-validator使用笔记.md》</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">$form.bootstrapValidator(&#123;</span><br><span class="line">  </span><br><span class="line">  <span class="comment">//设置小图标</span></span><br><span class="line">    feedbackIcons: &#123;</span><br><span class="line">    valid: <span class="string">'glyphicon glyphicon-ok'</span>,</span><br><span class="line">    invalid: <span class="string">'glyphicon glyphicon-remove'</span>,</span><br><span class="line">    validating: <span class="string">'glyphicon glyphicon-refresh'</span></span><br><span class="line">  &#125;,</span><br><span class="line">  </span><br><span class="line">  <span class="comment">//设置校验规则</span></span><br><span class="line">  fields:&#123;</span><br><span class="line">    </span><br><span class="line">    username:&#123;</span><br><span class="line">        validators:&#123;</span><br><span class="line">            notEmpty:&#123;</span><br><span class="line">                message:<span class="string">""</span></span><br><span class="line">            &#125;,</span><br><span class="line">          	stringLength:&#123;</span><br><span class="line">                min:<span class="number">6</span>,</span><br><span class="line">              	max:<span class="number">12</span>,</span><br><span class="line">              	message:<span class="string">""</span></span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;,</span><br><span class="line">    password:&#123;</span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<h3 id="表单校验成功-注册表单校验成功的事件，阻止默认，使用ajax提交"><a href="#表单校验成功-注册表单校验成功的事件，阻止默认，使用ajax提交" class="headerlink" title="表单校验成功,注册表单校验成功的事件，阻止默认，使用ajax提交"></a>表单校验成功,注册表单校验成功的事件，阻止默认，使用ajax提交</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">$form.on(<span class="string">"success.form.bv"</span>, <span class="function"><span class="keyword">function</span>(<span class="params">e</span>)</span>&#123;</span><br><span class="line">  <span class="comment">//阻止表单的默认提交</span></span><br><span class="line">  e.preventDefault();</span><br><span class="line">  <span class="comment">//使用ajax进行提交</span></span><br><span class="line">  $.ajax(&#123;</span><br><span class="line">    type:<span class="string">""</span>,</span><br><span class="line">    url:<span class="string">""</span>,</span><br><span class="line">    data:&#123;&#125;,</span><br><span class="line">    dataType:<span class="string">"json"</span>,</span><br><span class="line">    success:<span class="function"><span class="keyword">function</span>(<span class="params">data</span>)</span>&#123;</span><br><span class="line">      </span><br><span class="line">    &#125;</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<h3 id="处理响应结果"><a href="#处理响应结果" class="headerlink" title="处理响应结果"></a>处理响应结果</h3><ul>
+<li>如果是success,需要跳转到首页</li>
+<li>如果是error<ul>
+<li>如果error是1000，提示用户名错误</li>
+<li>error是1001，提示密码错误</li>
+</ul>
+</li>
+</ul>
+<p><code>$form.data(&quot;bootstrapValidator&quot;).updateStatus(&quot;username&quot;, &quot;INVALID&quot;, &quot;callback&quot;)</code>动态的改变状态</p>
+<h3 id="重置功能"><a href="#重置功能" class="headerlink" title="重置功能"></a>重置功能</h3><p>点击重置按钮时，需要重置表单的错误提示信息。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">"[type='reset']"</span>).on(<span class="string">"click"</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  </span><br><span class="line">  <span class="comment">//重置表单样式</span></span><br><span class="line">  $(<span class="string">"form"</span>).data(<span class="string">"bootstrapValidator"</span>).resetForm();</span><br><span class="line">  </span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<h3 id="进度条功能"><a href="#进度条功能" class="headerlink" title="进度条功能"></a>进度条功能</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//注册了全局事件，所有的ajax只要开始就会开启进度条</span></span><br><span class="line">$(<span class="built_in">document</span>).ajaxStart(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">  NProgress.start();</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="comment">//所有的ajax只要结束，延迟500毫秒，结束进度条</span></span><br><span class="line">$(<span class="built_in">document</span>).ajaxStop(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">  setTimeout(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    NProgress.done();</span><br><span class="line">  &#125;, <span class="number">500</span>);</span><br><span class="line"></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<h3 id="git操作"><a href="#git操作" class="headerlink" title="git操作"></a>git操作</h3><p>提交代码到login分支，合并功能到master分支</p>
+<h2 id="首页主体布局"><a href="#首页主体布局" class="headerlink" title="首页主体布局"></a>首页主体布局</h2><h3 id="侧边栏布局"><a href="#侧边栏布局" class="headerlink" title="侧边栏布局"></a>侧边栏布局</h3><h3 id="右侧布局"><a href="#右侧布局" class="headerlink" title="右侧布局"></a>右侧布局</h3><h3 id="js实现二级分类显示隐藏"><a href="#js实现二级分类显示隐藏" class="headerlink" title="js实现二级分类显示隐藏"></a>js实现二级分类显示隐藏</h3><h3 id="侧边栏显示隐藏效果"><a href="#侧边栏显示隐藏效果" class="headerlink" title="侧边栏显示隐藏效果"></a>侧边栏显示隐藏效果</h3><h3 id="共用退出功能"><a href="#共用退出功能" class="headerlink" title="共用退出功能"></a>共用退出功能</h3><p>模态框组件的使用</p>
+<h3 id="主页echarts的使用"><a href="#主页echarts的使用" class="headerlink" title="主页echarts的使用"></a>主页echarts的使用</h3><p>提交代origi码</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/01/15/笔记/" data-id="cjcfy12dg0000qsqnlp3cd7us" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-我的第一篇博客" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/01/15/我的第一篇博客/" class="article-date">
+  <time datetime="2018-01-15T08:13:29.586Z" itemprop="datePublished">2018-01-15</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/javascript/">javascript</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/01/15/我的第一篇博客/">我的第一篇博客</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题/"></a>一级标题/</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题/"></a>二级标题/</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题/"></a>三级标题/</h3><ul>
+<li>无序列表/-</li>
+<li>无序列表//+</li>
+</ul>
+<p>1.有序列表</p>
+<p>2.有序列表</p>
+<p><em>一个星号表示斜体</em></p>
+<p><strong>两个星号表示粗体</strong></p>
+<p><strong><em>三个星号表示粗斜体</em></strong></p>
+<p>单行注释一个“  tab键上点  ”</p>
+<p>通过id获取对象，<code>document.getElementByid()</code>方法</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//多行三个斜点</span></span><br><span class="line"><span class="comment">//多行代码</span></span><br><span class="line"><span class="keyword">var</span> num=<span class="number">11</span>;</span><br><span class="line"><span class="built_in">console</span>.log(num);</span><br><span class="line"><span class="built_in">document</span>.getElementByid(<span class="string">'id'</span>);</span><br></pre></td></tr></table></figure>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">html代码</span><br></pre></td></tr></table></figure>
+<p><code>table</code></p>
+<table>
+<thead>
+<tr>
+<th>标题</th>
+<th>标题2</th>
+<th>标题3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>-</th>
+<th>-</th>
+<th>-</th>
+<th>-</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>内容1</th>
+<th>内容2</th>
+<th>内容3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>ctrl+T 插入表格、</strong></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>链接 <a href=""></a></strong></p>
+<p><a href="https://www.csdn.net/" target="_blank" rel="noopener">这是一个链接</a></p>
+<p><strong>图片 ！[] ()    </strong></p>
+<p><img src="images" alt=""></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/01/15/我的第一篇博客/" data-id="cjcfxoctm00002cqnz4w7gfks" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/学习/">学习</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/心情/">心情</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/随便/">随便</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/随笔/">随笔</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/01/15/hello-world/" class="article-date">
+  <time datetime="2018-01-15T07:13:53.103Z" itemprop="datePublished">2018-01-15</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/01/15/hello-world/">Hello World</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/01/15/hello-world/" data-id="cjcfxm580000084qnor16hvsx" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">分类</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/javascript/">javascript</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/学习/">学习</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/心情/">心情</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/随便/">随便</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/随笔/">随笔</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签云</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/学习/" style="font-size: 10px;">学习</a> <a href="/tags/心情/" style="font-size: 10px;">心情</a> <a href="/tags/随便/" style="font-size: 10px;">随便</a> <a href="/tags/随笔/" style="font-size: 10px;">随笔</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/01/">一月 2018</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2018/01/15/笔记/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2018/01/15/我的第一篇博客/">我的第一篇博客</a>
+          </li>
+        
+          <li>
+            <a href="/2018/01/15/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2018 ysm<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
